@@ -96,7 +96,7 @@ int main()
                 cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
             }
             //Out of bound error handling
-            if(opt<0 || opt > 10)
+            if(opt<=0 || opt >= 10)
             {
                 cout<<"Invalid position\n";
                 i--;
